@@ -4,6 +4,7 @@ body
 	background-color: #FFFFFF;
     color: #666666;
 	font-family: Arial, Helvetica, sans-serif;
+	margin-right: 3px;
 }
 header 
 { 
@@ -20,6 +21,7 @@ nav
 { 
 	background-color: #90C7E3;
      font-weight: bold;
+	 width: 100%;
 }
 
 nav a 
@@ -78,3 +80,41 @@ dt
 	color: #5c7fa3;
 	font-weight: bold;
 }
+
+
+/* ===============================
+Mobile Styles: 0px to 480px
+===============================
+*/
+@media only screen and (max-width: 480px) {
+	nav{
+		display: block;
+	}
+	h2{
+		display: none;
+	}
+	img{
+		display: none;
+	}
+	
+}
+/* ================================
+Tablet Styles: 481px and greater
+================================
+*/
+@media only screen and (min-width: 481px) {
+	
+	h2{
+		display: block;
+	}
+	img{
+		display: block;
+	}
+}
+/* =================================
+Desktop Styles: 769px and greater
+=================================
+*/
+/*@media only screen and (min-width: 769px) {
+	
+}*/
