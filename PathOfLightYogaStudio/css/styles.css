@@ -1,0 +1,88 @@
+/*Cord Palmer 04/27/21*/
+
+
+main > ul{
+    list-style-image: url('/PathOfLightYogaStudio/images/yogabullet.png');
+    margin-left: 3em;
+}
+
+nav{
+    margin: 0%;
+    padding: 0%;
+}
+
+table.scheduleTable {
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: .5em;
+    color: purple;
+  }
+  table.scheduleTable td, table.scheduleTable th {
+    border: 1px solid #000000;
+    padding: 3px 2px;
+  }
+  table.scheduleTable tbody td {
+    font-size: 13px;
+    color: #000000;
+  }
+  table.scheduleTable thead {
+    background: #FFFFFF;
+    border-bottom: 1px solid #000000;
+  }
+  table.scheduleTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    border-left: 2px solid #FFFFFF;
+  }
+  table.scheduleTable thead th:first-child {
+    border-left: none;
+  }
+  
+  table.scheduleTable tfoot td {
+    font-size: 14px;
+  }
+
+  footer{
+      padding: .5em;
+  }
+  address{
+      margin-bottom: .5em;
+  }
+
+
+  /* Mobile Viewport */
+
+  @media only screen and (max-width: 641px) {
+    nav{
+        display: block;
+    }
+    header{
+        background-image: none;
+    }
+    body{
+        background-image: url(../images/yogamobile.png);
+    }
+    img{
+        display: none;
+    }
+  }
+
+  /* ================================
+Tablet Styles: 481px and greater
+================================
+*/
+  @media only screen and (min-width: 642px) 
+  and (max-width: 720px) {
+    nav{
+        display: inline;
+    }
+    body{
+        background-color: #f5f5f5;
+    }
+    
+ }
