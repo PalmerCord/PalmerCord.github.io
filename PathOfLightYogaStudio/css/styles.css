@@ -6,6 +6,10 @@ main > ul{
     margin-left: 3em;
 }
 
+header{
+    background-image:url(../images/hero-home.jpg)
+}
+
 nav{
     margin: 0%;
     padding: 0%;
