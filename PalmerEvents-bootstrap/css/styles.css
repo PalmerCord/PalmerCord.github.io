@@ -1,0 +1,47 @@
+/*
+Team Members:
+Date: Current Date
+File Name: styles.css
+*/
+
+.bg-red {
+    background-color: #780001;
+}
+
+.bg-light-blue {
+     background-color: #ccd5e6;   
+}
+
+/* Show mobile class, hide tablet-desktop class and menu-links id */
+@media (max-width: 575px) {
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}}
+
+/* Media Query for Tablet Viewport */
+@media (min-width: 576px) {  
+
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
+}
+
+footer > a{
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
