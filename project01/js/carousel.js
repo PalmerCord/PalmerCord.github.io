@@ -12,7 +12,7 @@
 
 "use strict";
 $(document).ready( () => {
-
+    $('.slider').bxSlider();
     const slider = $("#image_list");      // slider = ul element
 
     // the click event handler for the right button
@@ -23,8 +23,8 @@ $(document).ready( () => {
         
         // determine new value of left property
         let newLeftProperty = 0;
-        if (leftProperty - 100 > -900) {
-            newLeftProperty = leftProperty - 100;
+        if (leftProperty - 800 > -7200) {
+            newLeftProperty = leftProperty - 800;
         }
         
         // use the animate function to change the left property
@@ -40,10 +40,10 @@ $(document).ready( () => {
         // determine new value of left property
         let newLeftProperty = 0;
         if (leftProperty < 0) {
-            newLeftProperty = leftProperty + 100;
+            newLeftProperty = leftProperty + 800;
         }
         else {
-            newLeftProperty = -800;
+            newLeftProperty = -6400;
         }
         
         // use the animate function to change the left property

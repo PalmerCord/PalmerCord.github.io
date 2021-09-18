@@ -5,7 +5,8 @@
 #Version: 1                                               #
 #Date Last Modified: 09/03/2021                             #
 #Modified by: Cord Palmer                                           *
-*Modification log: 09/03/2021 complete                               *
+*Modification log: 09/03/2021 complete    
+                    09/17 edited the wrong js form this one is non functional at the moment                           *
 ***
 ******************************************************************** */
 
