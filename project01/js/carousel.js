@@ -8,9 +8,8 @@
 #Modification log: 09/10/2021 Created page     #                               *
 ***
 ******************************************************************** */
-
-
 "use strict";
+
 $(document).ready( () => {
     $('.slider').bxSlider();
     const slider = $("#image_list");      // slider = ul element

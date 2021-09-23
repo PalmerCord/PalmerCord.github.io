@@ -11,25 +11,26 @@
                   09/17/2021 cleaned up deleted unused css                      *
 ***
 ******************************************************************** */
+
+
 body {
   font-family: "Open Sans", sans-serif;
-  color: #0000;
-  
+  color: #444444;
 }
 
 a {
-  color: rebeccapurple;
+  color: #497d3c;
   text-decoration: none;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
+a:hover {
+  color: #ea6981;
+  text-decoration: none;
 }
 
-
-
-
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nunito", sans-serif;
+}
 
 /* Hero */
 #hero {
@@ -40,24 +41,30 @@ a {
     position: relative;
   }
   
+  
 
   
 
   
 
   #hero .hero-container {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
+    font-family: "Nunito", sans-serif;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0px;
+    margin-top: -58px;
     color: #ffff;
+  }
+
+  #hero .logo img
+  {
+    max-width: 100%;
+    max-height: auto;
+    padding: 110px 0px 0px 0px;
+    
   }
 
   /*carousel*/
@@ -98,43 +105,86 @@ a {
 
 .carousel {
   
-  border-style: solid;
   border-radius: 6px;
-  border-color: #557B89;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px;
-  padding: 20px 20px 40px 20px;
-  
+  margin: 20px;
+  padding: 40px 20px 40px 20px;
+  overflow: hidden;
   
 
 }
 
+.carousel img{
+  border-radius: 6px;
+  max-width: 100%;
+  height: auto;
+}
+
+.carouse {
+  background: #fff;
+  padding: 60px 0;
+  max-width: 400px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
   
 
   /*nav*/
+  #header {
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+
+  #header.header-scrolled, #header.header-inner-pages {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 12px 0;
+  }
 
   #header .logo {
-    color: rebeccapurple;
-    font-family: "";
+    color: #7C3DB5;
+    font-family: "Nunito", sans-serif;
     margin: 0;
     padding: 0;
     margin-left: 10px;
     
   }
 
-  #header .logo img {
+ /* #header .logo img {
     max-height: 200px;
     margin-bottom: -45px;
     margin-left: 70%;
     
+     Desktop Navigation
     
+  } */
+  nav {
+    float: left;
+    flex-direction: row;
+    padding-left: 20px;
+    opacity: 90%;
+  }
+
+  #navbar {
+    overflow: hidden;
+    background-color: #333;
     
   }
-  .navbar {
-    padding: 0;
-    
+
+  #navbar a {
+    text-decoration: none;
+    margin: 20px 0px 20px 0px;
+    padding-right: 20px;
   }
   
   .navbar ul {
@@ -143,7 +193,7 @@ a {
     display: flex;
     list-style: none;
     align-items: center;
-    text-decoration: none;
+    
   }
 
   .navbar li {
@@ -159,24 +209,54 @@ a {
   .navbar a, .navbar a:focus {
     display: flex;
     align-items: center;
+    font-family: "Nunito", sans-serif;
     justify-content: space-between;
-    color: rebeccapurple;
-    font-size: 20px;
+    color: #3DB2B5;
+    font-size: 18px;
     padding: 0 4px;
     white-space: nowrap;
-    transition: 0.3s;
+    transition: 0.5s;
     letter-spacing: 0.4px;
     position: relative;
+  }
+
+  .navbar a i, .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+  
+  .navbar > ul > li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: #7C3DB5;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  .navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: #7C3DB5;
   }
 
   /* Main */
 
   main {
-    margin: 10px;
+    margin: 20px;
+    font-family: "Nunito", sans-serif;
     
   }
   main strong {
-    color: rebeccapurple;
+    color: #7C3DB5;
   }
 
   main h2 {
@@ -184,15 +264,14 @@ a {
       
   }
 
-
-
+  
 
 
   
-  .card {
+  /*.card {
     
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: auto;
+    
     color:black;
     margin: auto;
     padding: 20px;
@@ -200,11 +279,26 @@ a {
     background: #fff;
     border-style: solid;
     border-color: #557B89;
-    
-    
-        
+    max-width: 400px;
     
   }
+*/
+  .cardImage {
+    width: 100px;
+  }   
+
+  .card {
+    background: #fff;
+    font-family: "Nunito", sans-serif;
+    padding: 50px 10px 40px 10px;
+    max-width: 400px;
+    margin: 20px 20px 20px 40px;
+    text-align: center;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
 
 
   /*Reatreats*/
@@ -213,52 +307,190 @@ a {
   .faqs {
     margin: 20px;
     color: #000;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 80px;
+    font-family: "Nunito", sans-serif;
+    max-width: 600px;
+    float: right;
+  }
+
+  #imgFluid {
+    max-width: 600px;
+    height: auto;
+    color: #000;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 1px;
+    
+    
+    
+  }
+
+  .retreatsImage02 {
+    margin-left: 50%;
   }
 
 
 
-  form {
+ /* form {
     width: 440px flex;
     margin: 20px 40px 40px 0px;
     padding: 20px;
     border-radius: 6px;
     background: #fff;
     color: #000;
-    box-shadow: 0 0 0px 0 rebeccapurple; 
+    box-shadow: 0 0 0px 0 7C3DB5; 
     
 
-  }
+  }   
+  
 
 /* newsletter */
 
   .newsletter {
-    display: flex;
-    
+    margin: 20px;
+    color: #000;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 80px;
+    font-family: "Nunito", sans-serif;
+    max-width: 600px;
+    float: right;
   }
 
   .newsletterImage {
     max-width: 600px;
     margin: 20px 0px 20px 20px;
-
+    color: #000;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     
   }
 
   /* contact */
 
   .contact {
-    width: 600px;
-    display: block;
+    margin: 20px;
+    color: #000;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: "Nunito", sans-serif;
+    max-width: 600px;
+    
   }
 
   .contactImage {
-    max-width: 600px;
-    margin: 20px 0px 20px 300px;
+    max-width: 100%;
+    max-height: auto;
+    justify-content: center;
+    color: #000;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px 20px 20px 0px;
 
     
-  }
+  }  
 
   .contact_form {
     justify-content: space-between;
   }
 
+  span {
+    color: #B53D76;
+  }
+
+  /* Footer */
+
+  #footer {
+    color: #444444;
+    font-size: 14px;
+    background: #f6f4f4;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: #fff;
+  }
+  
+  #footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-contact h4 {
+    font-size: 22px;
+    margin: 0 0 30px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+  
+  #footer .footer-top .footer-contact p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Nunito", sans-serif;
+    color: #777777;
+  }
+  
+  #footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444444;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #ea6981;
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+    color: #777777;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+    text-decoration: none;
+    color: #3DB2B5;
+  }
+
+  #footerLinks {
+    margin-top: 20px;
+  }
   

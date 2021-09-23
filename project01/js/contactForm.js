@@ -59,5 +59,5 @@ document.addEventListener("DOMContentLoaded", () => {
         $("#email_1").focus();
     });
     
-    $("#email_1").focus();
+    
 });
