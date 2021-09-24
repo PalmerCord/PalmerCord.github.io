@@ -118,25 +118,23 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+@media screen and (max-width: 1224px) {
+  #carousel {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
 .carousel img{
   border-radius: 6px;
   max-width: 100%;
   height: auto;
 }
 
-.carouse {
-  background: #fff;
-  padding: 60px 0;
-  max-width: 400px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  overflow: hidden;
-  text-align: center;
-  border-radius: 6px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-  
 
   /*nav*/
   #header {
@@ -160,14 +158,6 @@ h1, h2, h3, h4, h5, h6 {
     
   }
 
- /* #header .logo img {
-    max-height: 200px;
-    margin-bottom: -45px;
-    margin-left: 70%;
-    
-     Desktop Navigation
-    
-  } */
   nav {
     float: left;
     flex-direction: row;
@@ -253,7 +243,13 @@ h1, h2, h3, h4, h5, h6 {
   main {
     margin: 20px;
     font-family: "Nunito", sans-serif;
+    text-align: center;
     
+  }
+  main p {
+    max-width: 60%;
+    margin: auto;
+    text-align: center;
   }
   main strong {
     color: #7C3DB5;
@@ -267,22 +263,7 @@ h1, h2, h3, h4, h5, h6 {
   
 
 
-  
-  /*.card {
-    
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-    color:black;
-    margin: auto;
-    padding: 20px;
-    border-radius: 6px;
-    background: #fff;
-    border-style: solid;
-    border-color: #557B89;
-    max-width: 400px;
-    
-  }
-*/
+
   .cardImage {
     width: 100px;
   }   
@@ -290,9 +271,9 @@ h1, h2, h3, h4, h5, h6 {
   .card {
     background: #fff;
     font-family: "Nunito", sans-serif;
-    padding: 50px 10px 40px 10px;
+    padding: 40px;
     max-width: 400px;
-    margin: 20px 20px 20px 40px;
+    margin: 40px;
     text-align: center;
     border-radius: 6px;
     background: #fff;
@@ -332,22 +313,12 @@ h1, h2, h3, h4, h5, h6 {
 
   .retreatsImage02 {
     margin-left: 50%;
+    max-width: 800px;
+    height: auto;
   }
 
 
 
- /* form {
-    width: 440px flex;
-    margin: 20px 40px 40px 0px;
-    padding: 20px;
-    border-radius: 6px;
-    background: #fff;
-    color: #000;
-    box-shadow: 0 0 0px 0 7C3DB5; 
-    
-
-  }   
-  
 
 /* newsletter */
 
@@ -362,7 +333,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Nunito", sans-serif;
     max-width: 600px;
     float: right;
+    
   }
+
 
   .newsletterImage {
     max-width: 600px;
@@ -371,6 +344,12 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff;
     border-radius: 6px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  #newsletter {
+    text-align: center;
+    
     
   }
 
