@@ -23,7 +23,7 @@
 }
 
 body {
-    background-image: url("../lab16/halloweenBackground.jpg");
+    background-image: url("halloweenBackground.jpg");
     font-family: 'Courier New', Courier, monospace;
     color: rgb(255, 166, 0);
     background-repeat: no-repeat;
