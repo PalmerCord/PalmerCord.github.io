@@ -1,0 +1,43 @@
+
+
+.grid {
+	width: 606px;
+	height: 606px;
+	display: flex;
+	flex-wrap: wrap;
+    margin: auto;
+ 
+    
+    
+}
+
+.square {
+	height: 190px;
+	width: 190px;
+	border: solid rgb(255, 166, 0) 3px;
+}
+
+.mole {
+	background-image: url("pumkin.png");
+	background-size: cover;
+}
+
+body {
+    background-image: url("../lab16/halloweenBackground.jpg");
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 166, 0);
+    background-repeat: no-repeat;
+}
+
+body h2{
+   margin: auto; 
+   width: 50%;
+   padding: 10px;
+}
+
+body h1{
+    margin:auto;
+    width: 50%;
+    padding: 10px;
+    font-size: 55px;
+}
