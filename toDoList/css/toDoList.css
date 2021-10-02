@@ -1,0 +1,51 @@
+body {
+    background-image: url(../images/notepadBackground.jpg);
+}
+
+#header {
+    margin-left: 40px;
+    color: #28abc1;
+}
+
+main{
+    color: #fff;
+    text-align: center;
+    
+}
+.taskList {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100%;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px rgba(40, 171, 194, 0.9);
+    max-width: auto;
+    height: auto;
+    padding: 5px;
+    color: #000;
+}
+
+label {
+    padding: 5px;
+}
+
+
+#input {
+    padding: 5px;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+
+}
+
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+
+  
