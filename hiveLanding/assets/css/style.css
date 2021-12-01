@@ -1,9 +1,3 @@
-/**
-* Template Name: Medilab - v4.2.0
-* Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -281,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 90vh;
-  background: url("../img/bumblebeePassionFlower.jpg  ");
+  background: url("https://raw.githubusercontent.com/PalmerCord/PalmerCord.github.io/main/hiveLanding/assets/img/cryptobackground.jpg");
   margin-bottom: -10px;
 
   background-position: center;
