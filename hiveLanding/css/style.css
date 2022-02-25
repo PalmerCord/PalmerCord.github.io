@@ -278,6 +278,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 90vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("https://raw.githubusercontent.com/PalmerCord/PalmerCord.github.io/main/hiveLanding/assets/img/cryptobackground.jpg");
   margin-bottom: -10px;
+  opacity: .8;
 
   background-position: center;
   background-repeat: no-repeat;
